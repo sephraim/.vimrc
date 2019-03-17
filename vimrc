@@ -90,6 +90,9 @@ set autoindent    " turns it on
 set smartindent   " does the right thing (mostly) in programs
 set cindent       " stricter rules for C programs
 
+" Disable beeping on Windows Bash
+set visualbell
+
 " Folding methods
 "set foldmethod=indent
 "set foldlevel=1
