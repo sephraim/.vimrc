@@ -16,7 +16,8 @@ Plug 'junegunn/fzf.vim'
 " Auto-complete
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-endwise'
-Plug 'sukima/xmledit'
+Plug 'tpope/vim-ragtag'
+Plug 'alvan/vim-closetag'
 
 " Easily surround words with quotes, etc.
 Plug 'tpope/vim-surround'
@@ -92,7 +93,9 @@ set smartindent   " does the right thing (mostly) in programs
 set cindent       " stricter rules for C programs
 
 " Disable beeping on Windows Bash
-set visualbell
+if has('win32')
+  set visualbell
+endif
 
 " Folding methods
 "set foldmethod=indent
@@ -112,6 +115,15 @@ if has("gui_running")
     " Settings for MacVim and Inconsolata font
     let g:CtrlSpaceSymbols = { "File": "◯", "CTab": "▣", "Tabs": "▢" }
 endif
+
+" Setup for vim-closetag
+" filenames like *.xml, *.html, *.xhtml, ...
+" These are the file extensions where this plugin is enabled
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.rb'
+
+" filenames like *.xml, *.xhtml, ...
+" This will make the list of non-closing tags self-closing in the specified files
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
 
 " Use % to bounce from do to end etc.
 filetype plugin on
