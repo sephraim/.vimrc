@@ -16,6 +16,7 @@ Plug 'junegunn/fzf.vim'
 " Auto-complete
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-endwise'
+Plug 'sukima/xmledit'
 
 " Easily surround words with quotes, etc.
 Plug 'tpope/vim-surround'
