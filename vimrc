@@ -128,3 +128,6 @@ let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
 " Use % to bounce from do to end etc.
 filetype plugin on
 runtime macros/matchit.vim
+
+" Add jbuilder syntax highlighting
+au BufNewFile,BufRead *.jbuilder set ft=ruby
