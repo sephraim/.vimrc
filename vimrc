@@ -43,6 +43,9 @@ Plug 'skalnik/vim-vroom'
 " Folding for ruby & rspec files
 Plug 'vim-utils/vim-ruby-fold'
 
+" Add liquid/jekyll syntax suppport
+Plug 'tpope/vim-liquid'
+
 call plug#end()
 
 " Use ; to fuzzy search for files (using fzf)
